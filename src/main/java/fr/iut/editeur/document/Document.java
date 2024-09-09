@@ -1,5 +1,7 @@
 package fr.iut.editeur.document;
 
+import java.util.Random;
+
 public class Document {
 
     private String texte;
@@ -33,6 +35,15 @@ public class Document {
 
     public void effacer(int debut, int fin) {
         remplacer(debut, fin, "");
+    }
+
+    public void clear() {
+        texte = "";
+        for (int i = 0; i < 5; i++) {
+            if (Math.random() > 0.5) {
+                texte += "@";
+            }
+        }
     }
 
     @Override
