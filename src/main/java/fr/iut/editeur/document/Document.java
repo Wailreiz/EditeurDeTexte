@@ -39,6 +39,7 @@ public class Document {
 
     public void clear() {
         texte = "";
+        // bug supprimé
     }
 
     @Override
