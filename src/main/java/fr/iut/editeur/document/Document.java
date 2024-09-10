@@ -39,11 +39,6 @@ public class Document {
 
     public void clear() {
         texte = "";
-        for (int i = 0; i < 5; i++) {
-            if (Math.random() > 0.5) {
-                texte += "@";
-            }
-        }
     }
 
     @Override
