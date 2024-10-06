@@ -42,6 +42,11 @@ public class Document {
         // bug supprimé
     }
 
+    public void inserer(int debut, String ajout) {
+        ajout = texte.charAt(debut) + ajout;
+        remplacer(debut, debut, ajout);
+    }
+
     @Override
     public String toString() {
         return this.texte;
