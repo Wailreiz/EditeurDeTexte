@@ -8,6 +8,10 @@ public class CommandeRemplacer extends CommandeDocument {
         super(document, parameters);
     }
 
+    /**
+     * Exécute la methode Remplacer
+     * Initialisation de la méthode :  {@link Commande#executer()}
+     */
     @Override
     public void executer() {
         if(parameters.length < 3) {
